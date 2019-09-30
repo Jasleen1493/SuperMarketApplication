@@ -2,9 +2,9 @@ package com.tworks.entity;
 
 public class Quantity {
 	private double value;
-	private SellingUnit sellingUnit;
+	private String sellingUnit;
 	
-	public Quantity(double value, SellingUnit sellingUnit) {
+	public Quantity(double value, String sellingUnit) {
 		this.value = value;
 		this.sellingUnit = sellingUnit;
 	}
@@ -17,11 +17,11 @@ public class Quantity {
 		this.value = value;
 	}
 	
-	public SellingUnit getSellingUnit() {
+	public String  getSellingUnit() {
 		return sellingUnit;
 	}
 	
-	public void setSellingUnit(SellingUnit sellingUnit) {
+	public void setSellingUnit(String sellingUnit) {
 		this.sellingUnit = sellingUnit;
 	}
 }
