@@ -6,3 +6,4 @@ SuperMarket application - Thoughtworks assignment
 * Maven
 * Git 
 * Intellij - Java IDE
+* Junit 4
