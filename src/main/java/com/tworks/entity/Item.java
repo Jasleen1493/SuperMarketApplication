@@ -7,13 +7,13 @@ public class Item extends SubCategory{
 	private Discount discount;
 	private Category parentCategory;
 	
-	public Item(String name, Discount discount, String name1, double pricePerUnit, Quantity quantity, Discount discount1, Category parentCategory) {
-		super(name, discount);
+	public Item(String name, Discount discount,Category parentCategory, String name1, double pricePerUnit, Quantity quantity, Discount discount1, Category parentCategory1) {
+		super(name, discount,parentCategory);
 		this.name = name1;
 		this.pricePerUnit = pricePerUnit;
 		this.quantity = quantity;
 		this.discount = discount1;
-		this.parentCategory = parentCategory;
+		this.parentCategory = parentCategory1;
 	}
 	
 	public String getName() {

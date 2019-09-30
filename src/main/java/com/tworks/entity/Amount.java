@@ -3,7 +3,6 @@ package com.tworks.entity;
 public class Amount {
 private double totalAmount;
 private double savedAmount;
-private Discount discount;
 	
 	public double getTotalAmount() {
 		return totalAmount;
@@ -19,13 +18,5 @@ private Discount discount;
 	
 	public void setSavedAmount(double savedAmount) {
 		this.savedAmount = savedAmount;
-	}
-	
-	public Discount getDiscount() {
-		return discount;
-	}
-	
-	public void setDiscount(Discount discount) {
-		this.discount = discount;
 	}
 }
