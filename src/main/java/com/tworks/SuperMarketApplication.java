@@ -20,6 +20,5 @@ public class SuperMarketApplication {
 		Cart cart = new Cart(itemList);
 		
 		Customer customer = new Customer("Anish Kumar", cart);
-		System.out.println(customer.getName());
 	}
 }
