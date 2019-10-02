@@ -1,8 +1,10 @@
 package com.tworks.entity;
 
 public enum SellingUnit {
-	WEIGHT("kg"),
-	VOLUME("lts/mllts"),
+	WEIGHTINKG("kg"),
+	WEIGHTINGRMS("g"),
+	VOLUMEINLTR("lt"),
+	VOLUMEINMILLILTR("mlt"),
 	NUMBER("dozen");
 	
 	private String unit;

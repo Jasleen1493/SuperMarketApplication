@@ -1,28 +1,27 @@
 package com.tworks.entity;
 
-public class SubCategory extends Category {
+public class SubCategory {
 	private String name;
-	private Discount discount;
 	private Category parentCategory;
 	
-	public SubCategory(String name, Discount discount,Category parentCategory) {
-		super(name,discount,parentCategory);
+	public SubCategory(String name, Category parentCategory) {
+		this.name = name;
+		this.parentCategory = parentCategory;
 	}
 	
-	@Override
-	public Discount getDiscount() {
-		return discount;
+	public String getName() {
+		return name;
 	}
 	
-	@Override
-	public void setDiscount(Discount discount) {
-		this.discount = discount;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public SubCategory(String name, Discount discount,Category parentCategory, String name1, Discount discount1,Category parentCategory1) {
-		super(name, discount,parentCategory);
-		this.name = name1;
-		this.discount = discount1;
-		this.parentCategory = parentCategory1;
+	public Category getParentCategory() {
+		return parentCategory;
+	}
+	
+	public void setParentCategory(Category parentCategory) {
+		this.parentCategory = parentCategory;
 	}
 }
