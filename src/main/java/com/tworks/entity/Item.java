@@ -1,14 +1,13 @@
 package com.tworks.entity;
 
-public class Item extends SubCategory{
+public class Item{
 	private String name;
 	private double pricePerUnit;
 	private Quantity quantity;
 	private Discount discount;
-	private Category parentCategory;
+	private SubCategory parentCategory;
 	
-	public Item(String name, Discount discount,Category parentCategory, String name1, double pricePerUnit, Quantity quantity, Discount discount1, Category parentCategory1) {
-		super(name, discount,parentCategory);
+	public Item(String name1, double pricePerUnit, Quantity quantity, Discount discount1, SubCategory parentCategory1) {
 		this.name = name1;
 		this.pricePerUnit = pricePerUnit;
 		this.quantity = quantity;
@@ -40,21 +39,19 @@ public class Item extends SubCategory{
 		this.quantity = quantity;
 	}
 	
-	@Override
 	public Discount getDiscount() {
 		return discount;
 	}
 	
-	@Override
 	public void setDiscount(Discount discount) {
 		this.discount = discount;
 	}
 	
-	public Category getParentCategory() {
+	public SubCategory getParentCategory() {
 		return parentCategory;
 	}
 	
-	public void setParentCategory(Category parentCategory) {
+	public void setParentCategory(SubCategory parentCategory) {
 		this.parentCategory = parentCategory;
 	}
 }
