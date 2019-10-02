@@ -4,9 +4,9 @@ public class Item{
 	private String name;
 	private double pricePerUnit;
 	private Quantity quantity;
-	private Category parentCategory;
+	private SubCategory parentCategory;
 	
-	public Item(String name, double pricePerUnit, Quantity quantity, Category parentCategory) {
+	public Item(String name, double pricePerUnit, Quantity quantity, SubCategory parentCategory) {
 		this.name = name;
 		this.pricePerUnit = pricePerUnit;
 		this.quantity = quantity;
@@ -37,11 +37,11 @@ public class Item{
 		this.quantity = quantity;
 	}
 	
-	public Category getParentCategory() {
+	public SubCategory getParentCategory() {
 		return parentCategory;
 	}
 	
-	public void setParentCategory(Category parentCategory) {
+	public void setParentCategory(SubCategory parentCategory) {
 		this.parentCategory = parentCategory;
 	}
 }
